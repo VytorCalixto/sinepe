@@ -1,0 +1,24 @@
+{
+    "port": 3000,
+    "security": {
+        "tokenLife" : 3600
+    },
+    "mongoose": {
+        "uri": "mongodb://localhost/node-express-base"
+    },
+    "default": {
+        "api": {
+            "version" : "v1"
+        },
+        "user": {
+            "name": "Root",
+            "username": "root",
+            "password": "abc1234"
+        },
+        "client": {
+            "name": "Test",
+            "clientId": "test-web",
+            "clientSecret": "KeepItSecret"
+        }
+    }
+}

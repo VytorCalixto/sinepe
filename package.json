@@ -1,0 +1,28 @@
+{
+    "name": "node-express-base",
+    "version": "0.0.1",
+    "author": "Vytor Calixto <vytorcalixto@gmail.com> (https://github.com/VytorCalixto)",
+    "description": "Node and express base server",
+    "private": true,
+    "scripts": {
+        "start": "nodemon server.js || node server.js",
+        "configure": "node generateData.js"
+    },
+    "dependencies": {
+        "body-parser": "^1.13.1",
+        "cookie-parser": "^1.3.5",
+        "express": "^4.13.0",
+        "faker": "^2.1.5",
+        "method-override": "^2.3.3",
+        "mongoose": "^4.0.6",
+        "oauth2orize": "^1.0.1",
+        "passport": "^0.2.2",
+        "passport-http": "^0.2.2",
+        "passport-http-bearer": "^1.0.1",
+        "passport-oauth2-client-password": "^0.1.2",
+        "debug": "~2.0.x",
+        "nconf": "^0.6.x",
+        "winston": "^0.8.x"
+    },
+    "license": "MIT"
+}
