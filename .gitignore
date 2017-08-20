@@ -1,3 +1,4 @@
+.vscode
 .DS_Store
 .idea
 lib-cov
@@ -10,8 +11,14 @@ lib-cov
 *.gz
 
 pids
-logs
 results
 
 npm-debug.log
-node_modules
+node_modules/
+build/*
+
+.gulp-cache
+
+config.json
+docs/
+.vscode/

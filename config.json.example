@@ -1,0 +1,98 @@
+{
+    "development":
+    {
+        "port": 3000,
+        "ip": "127.0.0.1",
+        "debug" : true,
+        "monetdb": {
+            "host": "simcaqdb3.c3sl.ufpr.br",
+            "port": 50000,
+            "dbname": "simcaq_dev3",
+            "user": "monetdb",
+            "password":"monetdb",
+            "nrConnections": "4"
+        },
+        "cdn" : {
+            "url": "http://simcaqdb3.c3sl.ufpr.br:3000"
+        },
+        "mongodb" : {
+            "uri": "mongodb://localhost/dev_users",
+            "secret": "SimCAQC3SL"
+        },
+        "monq": {
+            "uri": "mongodb://localhost/dev_monq"
+        },
+        "default": {
+            "api": {
+                "version" : "v1"
+            }
+        },
+        "email": {
+            "port": 25,
+            "host": "mx.c3sl.ufpr.br",
+            "secure": false,
+            "ignoreTLS": true,
+            "from": "\"Laboratório de Dados Educacionais\" <lde@c3sl.ufpr.br>"
+        }
+    },
+    "test":
+    {
+        "port": 3000,
+        "ip": "127.0.0.1",
+        "debug" : true,
+        "monetdb": {
+            "host": "simcaqdb3.c3sl.ufpr.br",
+            "port": 50000,
+            "dbname": "simcaq_dev3",
+            "user": "monetdb",
+            "password":"monetdb",
+            "nrConnections": "4"
+        },
+        "cdn" : {
+            "url": "http://simcaqdb3.c3sl.ufpr.br:3000"
+        },
+        "mongodb" : {
+            "uri": "mongodb://localhost/test_users",
+            "secret": "SimCAQC3SL"
+        },
+        "monq": {
+            "uri": "mongodb://localhost/test_monq"
+        },
+        "default": {
+            "api": {
+                "version" : "v1"
+            }
+        },
+        "email": "simcaq@c3sl.ufpr.br"
+    },
+    "production":
+    {
+        "port": 3000,
+        "ip": "127.0.0.1",
+        "debug" : false,
+        "monetdb": {
+            "host": "simcaqdb3.c3sl.ufpr.br",
+            "port": 50000,
+            "dbname": "simcaq_dev3",
+            "user": "monetdb",
+            "password":"monetdb",
+            "nrConnections": "4"
+        },
+        "cdn" : {
+            "url": "http://simcaqdb3.c3sl.ufpr.br:7000"
+        },
+        "mongodb" : {
+            "uri": "mongodb://localhost/users",
+            "secret": "SimCAQC3SL"
+        },
+        "monq": {
+            "uri": "mongodb://localhost/monq"
+        },
+        "default": {
+            "api": {
+                "version" : "v1"
+            }
+        },
+        "email": "simcaq@c3sl.ufpr.br"
+    }
+}

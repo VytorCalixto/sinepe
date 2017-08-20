@@ -1,0 +1,16 @@
+{
+    "extends": "airbnb",
+    "root": true,
+    "plugins": [
+        "react",
+        "jsx-a11y",
+        "import"
+    ],
+    "rules": {
+        "jsx-a11y/heading-has-content": [ "off" ],
+        "jsx-a11y/anchor-has-content": [ "off" ],
+        "indent": [ "error", 4 ],
+        "no-unused-vars": [ "error", { "args": "none" }],
+        "no-param-reassign": [ "off" ]
+    }
+}

@@ -1,0 +1,24 @@
+stages:
+  - test
+
+services:
+  - mongo:latest
+
+variables:
+  MONGO_URI: 'mongodb://mongo/app_name'
+  NODE_ENV: 'test'
+
+before_script:
+  - npm install --global gulp gulp-cli babel babel-cli babel-core babel-register mocha gulp-mocha gulp-eslint
+  - npm install
+
+run_tests:
+  stage: test
+  script:
+    - ping -W1 -c1 mongo
+    - mv config.json.example config.json
+    - sed -i -e 's/false/true/g' config.json
+    - gulp build
+    - gulp test
+  tags:
+    - node
